@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Git</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="impress-demo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="impress-not-supported">
+	<div class="fallback-message">
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+		<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+	
+	<div id="impress"> 
+		<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+			<q><b>Git</b></q>
+			<q><strong>A brief introduction</strong></q>
+			<p>By Abhijeet Kasurde </p>
+		</div>
+		<div class="step slide" data-x="0" data-y="-1500">
+			<q><b>Agenda</b></q>
+			<p>&nbsp; - &nbsp;&nbsp;Version Control Concepts </p>
+			<p>&nbsp; - &nbsp;&nbsp;What is git ? </p>
+			<p>&nbsp; - &nbsp;&nbsp;Get to know more about git </p>
+			<p>&nbsp; - &nbsp;&nbsp;How to use </p>
+			<p>&nbsp; - &nbsp;&nbsp;Q and A</p>
+		</div>
+
+		<div class="step slide" data-x="1000" data-y="-500">
+		    <q>Version Control Concepts</q>
+			<br>
+			<ul>
+				<li>Your daily tasks </li>
+				
+				<li>Create Files</li>
+				
+				<li>Save Files </li>
+				
+				<li>Edit Files</li>
+				
+				<li>Save things again and again</li>
+				
+				<li>... History tracking </li>
+				
+				<li>Collabroative history tracking </li>
+			</ul>
+	    </div>
+		
+		<div id="whatIsGit" class="step" data-x="2000" data-y="-1600">
+			<b>What is Git?</b><br/>
+	    </div>
+
+		<div id="whatIsGit-1" class="step" data-x="2400" data-y="-1400" data-scale="1">
+			<p><strong>Free and Open Source </strong> distributed version control</p>
+	    </div>
+		
+		<div id="whatIsGit-2" class="step" data-x="2400" data-y="-1200" data-scale="2">
+			<p>Fast and modern</p>
+	    </div>
+
+		<div id="whatIsGit-3" class="step" data-x="2400" data-y="-1000" data-scale="1">
+			<p>Easy to use</p>
+	    </div>
+		<div id="whatIsGit-4" class="step" data-x="2400" data-y="-800" data-scale="2">
+			<p>Collaborative changes</p>
+	    </div>
+
+		<div id="bestofgit" class="step" data-x="0" data-y="0" data-scale="4">
+			<q>What is <small>best</small> about GIT</q>   
+			<ul>
+				<li>- Branching and merging</li>
+				<li>- Full local histroy</li>
+				<li>- Fast</li>
+				<li>- Powerful merging</li>
+				<li>- Free and Open Source</li>
+			</ul>
+	    </div>
+		
+		<div id="title" class="step" data-x="-3400" data-y="1800" data-rotate="-90" data-scale="6">
+			<p><b>Git Theory </b></p>
+			<p>Snapshots rather than deltas</p>
+			<p>Every operation is local</p>
+			<p>Three states</p>
+			<ul>
+				<li>- Working area</li>
+				<li>- Staging area</li>
+				<li>- Git directory (repository)</li>
+			</ul>
+			<span class="footnote"><sup>*</sup> no big bang theory please</span>
+		</div>
+		
+		<div id="install" class="step" data-x="3500" data-y="-800" data-scale="3" data-rotate="90">
+			<strong>Quick Install</strong><br/> <a href="http://code.google.com/p/git-osx-installer/">Git on Mac</a> <small>or</small>
+			<a href="http://code.google.com/p/msysgit/">Git on Windows</a><br/> or just <strong>$ apt-get install git-core</strong>
+			<small>This will allow you to interact with Git via your <b>Terminal</b></small></p>
+		</div>
+
+		 <div id="quicksetup" class="step" data-x="2800" data-y="2800" data-rotate="180" data-scale="8">
+			 <p><b>setup your identity </b>
+			 <br/>
+			 <small>
+				# git config --global user.name "Abhijeet Kasurde"<br/>
+	            # git config --global user.email "abhijeet_kasurde@symantec.com"<br/>
+			 </small>
+			</p>
+		</div>
+
+		<div id="doublecheck" class="step" data-x="10000" data-y="2800" data-rotate="0" data-scale="3">
+		 <p><strong>Double check</strong> <br/>
+		 <p>for your dev environment.</p>
+			<code># git config --list --global </code>
+		 </div>
+		
+		 <div id="gitinit" class="step" data-x="10000" data-y="4000" data-scale="2">
+			<q>Create repository</q>
+			<p># git init </p>
+		 </div>
+
+		<div id="gitinit-2" class="step" data-x="10000" data-y="6000" data-scale="2">
+			<q>Working on repository</q>
+			<p># git add  </p><br/>
+			<p># git status  </p><br/>
+			<p># git commit  </p><br/>
+			<p># git rm  </p><br/>
+			<p># git log </p><br/>
+		 </div>
+
+		<div id="gitinit-3" class="step" data-x="10000" data-y="8000" data-scale="2">
+			<q>Clone from repository</q>
+			<p># git clone "url" </p><br/>
+			<ul>
+				<li>HTTPS</li>
+				<li>GIT</li>
+				<li>SSH</li>
+			</ul>
+		 </div>
+		<div id="remotes" class="step" data-x="10000" data-y="10000" data-scale="2">
+		<q> Working with remotes</q>
+		<img src="remotes.jpg"></img>
+		</div>
+		
+		<div id="branches" class="step" data-x="7000" data-y="5000" data-scale="2">
+			<p>one more thing... branches</p>
+			<img src="branches.jpg"></img>
+		</div>
+		<div id="thnx" class="step slide" data-x="-2000" data-y="-1500">
+			<q>Thanks,</q><p> any question </p>	
+		</div>
+	</div>
+
+  </div><script type="text/javascript" src="impress.js">
+ 
+  <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+
+<script>
+	if ("ontouchstart" in document.documentElement) { 
+		document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+	}
+</script>
+
+<script>impress().init();</script>
+</script>
+</body>
+</html>
